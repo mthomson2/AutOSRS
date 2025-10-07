@@ -4,7 +4,7 @@ from torchvision import transforms
 import torchvision  
 from PIL import Image
 import os
-from custom_dataset import CustomImageDataset
+from utils.custom_dataset import CustomImageDataset
 import matplotlib.pyplot as plt
 import numpy as np
 import torch.nn as nn

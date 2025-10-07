@@ -1,6 +1,8 @@
 # AutOSRS
 A totally legal and ethical approach to Old School Runescape 
 
+![Demo](autosrs_gifv1.gif)
+
 # Current Skill Support
 ### 1. Agility - Canifis Course 
 ### 2. Others In Progress
@@ -31,13 +33,16 @@ Although this can be an extremely efficient method to training, it does require 
     * This program assumes a 1920x1080 resolution on Window 1. There is currently no support for other resolutions or screens. 
 2. You must start OSRS with RuneLite or another client that will highlight the jump locations in Green or Red boxes. 
     * Ensure RuneLite client is on Window 1 and fully maximized. 
+    * <b>Your orientation MUST be set to North as up. The compass should show the N at the top.</b> This is due to the training data all being oriented towards the North. The computer vision will not work, otherwise. 
 3. Ensure Python and Pip are installed
 4. Open your terminal of choice and clone this repository to your preferred location. 
 5. Create a virtual environment (conda, virtualenv, etc.)
     * <i> e.g. python -m venv myenv</i>
 6. Activate your environment
     * <i>e.g. ./myenv/Scripts/activate</i>
-7. Install requirements 
+7. Install requirements
+    * You might have different commands, based on your environment. Install Torch with CUDA support. Go here and get your command: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+        * E.g. `pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126`
     * `pip install -r requirements.txt`
 8. Start AutOSRS
     * `python autosrs.py` 

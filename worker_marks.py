@@ -30,16 +30,6 @@ class WorkerMarks():
     def get_closest_to_screen_center(self, points):
         sorted_coords = sorted(points, key=lambda p: (p[0] -  center_screen["x"])**2 + (p[1] - center_screen["y"])**2)
         return sorted_coords
-        # closest_point = None
-        # min_distance = float('inf')
-
-        # for point_x, point_y in points:
-        #     distance = math.sqrt((point_x - center_screen["x"])**2 + (point_y - center_screen["y"])**2)
-        #     if distance < min_distance:
-        #         min_distance = distance
-        #         closest_point = (point_x, point_y)
-
-        # return closest_point
 
     def run(self):
         model = YOLO(MODEL_PATH)
@@ -93,7 +83,6 @@ class WorkerMarks():
                     if (box.cls[0] == 1):
                         green_box_centers.append((center_x,center_y))
                         self.state = 0
-                    # print(f"Class: {box.cls[0]}    Center: ({center_x}, {center_y})")
             
             # Compute Closest Red/Marks box
             self.reds = self.get_closest_to_screen_center(red_box_centers)

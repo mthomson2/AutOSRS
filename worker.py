@@ -1,6 +1,6 @@
 import torch
 from torchvision import transforms
-from prepare_dataset import Net, PATH, imshow
+from utils.prepare_dataset import Net, PATH, imshow
 import mss
 import mss.tools
 import cv2 # For image processing and saving
@@ -31,12 +31,6 @@ class Worker():
         # Initialize mss
         sct = mss.mss()
 
-        # Define how often to display/save (in seconds)
-        display_time = 1
-        start_time = time.time()
-        frame_count = 0
-        frame_count_name = 0
-
         while True:
             # Grab the image from the screen
             sct_img = sct.grab(monitor)
@@ -53,8 +47,6 @@ class Worker():
                 _, predicted = torch.max(output, 1)
                 predicted_class = predicted.item()  # Convert tensor to integer
                 self.state = predicted_class
-                # print(f'Predicted: {predicted_class}')
-                # imshow(img)
 
             if cv2.waitKey(25) & 0xFF == ord("q"):
                 cv2.destroyAllWindows()
