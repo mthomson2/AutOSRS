@@ -1,0 +1,40 @@
+(env) PS C:\Users\molly\Projects\AutOSRS> python .\test_click.py
+Mouse clicked at (X: 869, Y: 380) with button: Button.left # Block 1
+Mouse clicked at (X: 931, Y: 386) with button: Button.left # Block 2
+Mouse clicked at (X: 771, Y: 531) with button: Button.left # Block 3
+Mouse clicked at (X: 875, Y: 630) with button: Button.left # Mark of Grace
+Mouse clicked at (X: 797, Y: 602) with button: Button.left # Block 4
+Mouse clicked at (X: 902, Y: 784) with button: Button.left # Block 5
+Mouse clicked at (X: 997, Y: 633) with button: Button.left # Block 6
+Mouse clicked at (X: 1407, Y: 533) with button: Button.left # Block 7
+Mouse clicked at (X: 940, Y: 357) with button: Button.left # Block 8
+
+Mouse clicked at (X: 929, Y: 381)
+Mouse clicked at (X: 770, Y: 532)
+Mouse clicked at (X: 716, Y: 700)
+Mouse clicked at (X: 911, Y: 625)
+Mouse clicked at (X: 942, Y: 671)
+Mouse clicked at (X: 1008, Y: 624)
+Mouse clicked at (X: 1399, Y: 511)
+Mouse clicked at (X: 936, Y: 353)
+Mouse clicked at (X: 870, Y: 395)
+Mouse clicked at (X: 921, Y: 381)
+Mouse clicked at (X: 764, Y: 531)
+Mouse clicked at (X: 718, Y: 702)
+Mouse clicked at (X: 915, Y: 791)
+Mouse clicked at (X: 1014, Y: 620)
+Mouse clicked at (X: 1394, Y: 511)
+Mouse clicked at (X: 933, Y: 349)
+Mouse clicked at (X: 871, Y: 393)
+
+
+Mouse clicked at (X: 814, Y: 658)
+Mouse clicked at (X: 1031, Y: 424)
+Mouse clicked at (X: 645, Y: 719)
+Mouse clicked at (X: 1026, Y: 385)
+Mouse clicked at (X: 947, Y: 757)
+Mouse clicked at (X: 952, Y: 758)
+Mouse clicked at (X: 942, Y: 747)
+
+Mouse clicked at (X: 1630, Y: 874)
+Mouse clicked at (X: 1339, Y: 565)

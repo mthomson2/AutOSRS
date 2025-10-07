@@ -1,0 +1,13 @@
+# Paths to image folders (relative to 'path' if 'path' is defined, otherwise relative to this YAML)
+train: images/train
+val: images/val
+
+# Number of classes
+nc: 4
+
+# Class names
+names:
+  0: mark
+  1: greenbox
+  2: redbox
+  3: tree
